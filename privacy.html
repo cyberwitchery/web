@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>privacy — cyber witchery lab</title>
+
+    <style>
+@font-face{
+  font-family:"IBM Plex Mono";
+  src:url("./IBMPlexMono-Regular.ttf") format("truetype");
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+}
+@font-face{
+  font-family:"IBM Plex Mono";
+  src:url("./IBMPlexMono-Bold.ttf") format("truetype");
+  font-weight:700;
+  font-style:normal;
+  font-display:swap;
+}
+      :root{
+        --bg:#050505; --fg:#f2f2f2; --muted:#bdbdbd; --rule:#262626;
+        --pad:22px; --max:760px;
+        --mono:"IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      }
+      *{ box-sizing:border-box; } html,body{ height:100%; }
+      body, p, ul, li, div, span, a{ font-family:var(--mono); }
+      body{ margin:0; background:var(--bg); color:var(--fg); line-height:1.22; letter-spacing:0; }
+      a{ color:var(--fg); text-decoration:none; border-bottom:1px solid var(--rule); }
+      a:hover{ border-bottom-color:var(--fg); }
+      .frame{ max-width:var(--max); margin:0 auto; padding:24px; }
+      .box{ border:2px solid var(--rule); padding:var(--pad); }
+      h1{ margin:0 0 10px 0; font-weight:700; font-size:22px; letter-spacing:.4px; text-transform:lowercase; }
+      .muted{ color:var(--muted); }
+      hr{ border:0; border-top:2px solid var(--rule); margin:16px 0; }
+      .label{ margin:0 0 8px 0; font-weight:700; font-size:12px; letter-spacing:.6px; text-transform:lowercase; }
+      ul{ margin:0; padding-left:18px; list-style: none; color:var(--muted); }
+      li{ margin:0 0 6px 0; padding-left:14px; position:relative; border-left: 2px solid var(--rule);}
+    </style>
+  </head>
+
+  <body>
+    <main class="frame">
+      <section class="box">
+        <h1>privacy (datenschutz)</h1>
+
+        <p class="label">controller</p>
+        <ul>
+          <li><span class="muted">veit heller</span>, <span class="muted">moltkestr. 5, 91054 erlangen, germany</span></li>
+          <li>contact: <span class="muted">contact@cyberwitchery.com</span></li>
+        </ul>
+
+        <hr />
+
+        <p class="label">hosting + logs</p>
+        <ul>
+          <li>our host processes server logs (ip address, timestamp, url, user-agent) for security and troubleshooting.</li>
+          <li>retention: <span class="muted">14 days</span></li>
+        </ul>
+
+        <hr />
+
+        <p class="label">analytics</p>
+        <ul>
+          <li>we use plausible analytics for aggregated traffic trends.</li>
+          <li>plausible is cookie-less and does not use persistent identifiers; data is aggregated.</li>
+          <li>provider: <a href="https://plausible.io">plausible analytics</a> (eu; infrastructure based in germany).</li>
+        </ul>
+
+        <hr />
+
+        <p class="label">your rights</p>
+        <ul>
+          <li>access, rectification, erasure, restriction, objection, portability.</li>
+          <li>complaint with your supervisory authority.</li>
+        </ul>
+
+        <hr />
+
+        <a href="./">back</a>
+      </section>
+    </main>
+  </body>
+</html>
