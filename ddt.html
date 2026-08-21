@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ddt · cyberwitchery</title>
+<meta name="description" content="ddt collects and structures codebase evidence for technical due diligence: code health, architecture, dependencies, repository history, ownership, and delivery risk.">
+<link rel="canonical" href="https://cyberwitchery.com/ddt.html">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="cyberwitchery">
+<meta property="og:title" content="ddt · cyberwitchery">
+<meta property="og:description" content="codebase evidence for technical due diligence. run it against the repositories, or inside the target environment without releasing the source.">
+<meta property="og:url" content="https://cyberwitchery.com/ddt.html">
+<meta property="og:image" content="https://cyberwitchery.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="cyberwitchery — tools for network automation and security">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ddt · cyberwitchery">
+<meta name="twitter:description" content="codebase evidence for technical due diligence. run it against the repositories, or inside the target environment without releasing the source.">
+<meta name="twitter:image" content="https://cyberwitchery.com/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Hanken+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#0a0a0a}
+  ::selection{background:#e8e8e8;color:#0a0a0a}
+  a{text-decoration:none;color:inherit}
+  @media (max-width:680px){
+    .r-wrap{padding:0 20px !important;}
+    .r-2col{grid-template-columns:1fr !important;gap:32px !important;}
+    .r-spec{grid-template-columns:1fr !important;gap:3px !important;}
+    .r-evid{grid-template-columns:1fr 1fr !important;}
+  }
+</style>
+<style>
+.hv0:hover{color:#fff !important}
+.hv1:hover{color:#fff !important}
+.hv2:hover{color:#fff !important}
+.hv3:hover{color:#fff !important}
+.hv4:hover{color:#fff !important}
+.hv5:hover{color:#fff !important}
+.hv6:hover{color:#fff !important}
+.hv7:hover{background:#e8e8e8 !important;color:#0a0a0a !important}
+.hv8:hover{background:#fff !important}
+.hv9:hover{border-color:#fff !important;color:#fff !important}
+.hv10:hover{color:#fff !important}
+.hv11:hover{color:#fff !important}
+.hv12:hover{color:#fff !important}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "ddt",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "cross-platform",
+  "description": "collects and structures the evidence behind a software assessment: code health, architecture, dependencies, repository history, ownership, and delivery risk. run it against the repositories, or inside the target environment without releasing the source code.",
+  "url": "https://cyberwitchery.com/ddt.html",
+  "publisher": {
+    "@type": "Organization",
+    "name": "cyberwitchery",
+    "url": "https://cyberwitchery.com/"
+  }
+}
+</script>
+</head>
+<body>
+<div style="background:#0a0a0a;color:#e4e4e4;font-family:'JetBrains Mono',monospace;min-height:100vh;-webkit-font-smoothing:antialiased;font-size:14px;line-height:1.65">
+<div class="r-wrap" style="max-width:880px;margin:0 auto;padding:0 36px">
+
+  <!-- masthead -->
+  <div style="display:flex;align-items:center;justify-content:space-between;gap:14px 20px;padding:26px 0;flex-wrap:wrap">
+    <a href="index.html" style="font-weight:700;color:#f2f2f2" class="hv0">cyberwitchery lab</a>
+    <div style="display:flex;gap:13px;color:#555;font-size:13px;flex-wrap:wrap">
+      <a href="alembic.html" style="color:#bbb" class="hv1">alembic</a><span>·</span>
+      <a href="ddt.html" style="color:#bbb" class="hv2">ddt</a><span>·</span>
+      <a href="index.html#work" style="color:#bbb" class="hv3">work with us</a><span>·</span>
+      <a href="/log" style="color:#bbb" class="hv4">log</a><span>·</span>
+      <a href="papers.html" style="color:#bbb" class="hv5">papers</a><span>·</span>
+      <a href="https://github.com/cyberwitchery" target="_blank" style="color:#bbb" class="hv6">github</a>
+    </div>
+  </div>
+
+  <!-- product hero -->
+  <div style="padding:70px 0 52px">
+    <div style="color:#666;font-size:13px;margin-bottom:18px">a cyberwitchery product · commercial</div>
+    <h1 style="font-family:'JetBrains Mono',monospace;font-weight:700;font-size:34px;line-height:1.25;letter-spacing:-0.02em;margin:0;color:#f4f4f4">ddt</h1>
+    <p style="font-family:'Hanken Grotesk',sans-serif;font-size:19px;line-height:1.5;color:#cfcfcf;max-width:660px;margin:18px 0 0">codebase evidence for technical due diligence.</p>
+    <p style="font-family:'Hanken Grotesk',sans-serif;font-size:17px;line-height:1.55;color:#9c9c9c;max-width:640px;margin:16px 0 0">ddt collects and structures the evidence behind a software assessment: code health, architecture, dependencies, repository history, ownership, and delivery risk.</p>
+    <div style="margin-top:22px"><a href="https://demo.ddt.cyberwitchery.com" target="_blank" style="border:1px solid rgba(255,255,255,0.22);color:#f2f2f2;padding:11px 22px;font-size:13px;font-weight:500;display:inline-block" class="hv7">see it in action →</a></div>
+  </div>
+
+  <!-- run it where the code is -->
+  <div style="padding:8px 0 8px">
+    <div style="font-weight:700;font-size:18px;color:#f2f2f2;margin-bottom:20px">run it where the code is</div>
+    <div class="r-2col" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+      <div style="border:1px solid rgba(255,255,255,0.12);padding:24px">
+        <div style="color:#f2f2f2;font-weight:500;margin-bottom:8px">direct access</div>
+        <div style="font-family:'Hanken Grotesk',sans-serif;font-size:15px;line-height:1.55;color:#8f8f8f">run ddt against repositories available to the assessment team.</div>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,0.12);padding:24px">
+        <div style="color:#f2f2f2;font-weight:500;margin-bottom:8px">private targets</div>
+        <div style="font-family:'Hanken Grotesk',sans-serif;font-size:15px;line-height:1.55;color:#8f8f8f">the target runs ddt inside its own environment and returns only a sealed evidence database; the source never leaves.</div>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,0.12);padding:24px">
+        <div style="color:#f2f2f2;font-weight:500;margin-bottom:8px">source code</div>
+        <div style="font-family:'Hanken Grotesk',sans-serif;font-size:15px;line-height:1.55;color:#8f8f8f">the code does not need to leave the target environment.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- analysis that fits the stack -->
+  <div style="border-top:1px solid rgba(255,255,255,0.12);padding:40px 0 8px;margin-top:44px">
+    <div style="font-weight:700;font-size:18px;color:#f2f2f2;margin-bottom:20px">analysis that fits the stack</div>
+    <p style="font-family:'Hanken Grotesk',sans-serif;font-size:16px;line-height:1.6;color:#a4a4a4;max-width:660px;margin:0">each assessment uses the analyzers relevant to the technologies present: languages, frameworks, dependencies, repository history, build systems, and delivery infrastructure.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 24px">
+      <span style="border:1px solid rgba(255,255,255,0.14);color:#bdbdbd;font-size:12px;padding:5px 11px">languages</span>
+      <span style="border:1px solid rgba(255,255,255,0.14);color:#bdbdbd;font-size:12px;padding:5px 11px">frameworks</span>
+      <span style="border:1px solid rgba(255,255,255,0.14);color:#bdbdbd;font-size:12px;padding:5px 11px">dependencies</span>
+      <span style="border:1px solid rgba(255,255,255,0.14);color:#bdbdbd;font-size:12px;padding:5px 11px">repository history</span>
+      <span style="border:1px solid rgba(255,255,255,0.14);color:#bdbdbd;font-size:12px;padding:5px 11px">build systems</span>
+      <span style="border:1px solid rgba(255,255,255,0.14);color:#bdbdbd;font-size:12px;padding:5px 11px">delivery infrastructure</span>
+    </div>
+    <p style="font-family:'Hanken Grotesk',sans-serif;font-size:16px;line-height:1.6;color:#a4a4a4;max-width:660px;margin:0">analyzers share one evidence model and can be added independently. support for a new technology extends the system without changing how evidence is collected, sealed, reviewed, or compared.</p>
+  </div>
+
+  <!-- who it's for -->
+  <div style="border-top:1px solid rgba(255,255,255,0.12);padding:40px 0 8px;margin-top:40px">
+    <div style="font-weight:700;font-size:18px;color:#f2f2f2;margin-bottom:20px">who it's for</div>
+    <div class="r-2col" style="display:grid;grid-template-columns:1fr 1fr;gap:48px">
+      <div>
+        <div style="color:#7a7a7a;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:12px">technical due diligence</div>
+        <div style="color:#d4d4d4;margin-bottom:6px">repeatable evidence across assessments.</div>
+        <div style="font-family:'Hanken Grotesk',sans-serif;font-size:15px;line-height:1.55;color:#8f8f8f">the same collection runs on every target, including ones where direct repository access is unavailable, so findings are comparable deal to deal.</div>
+      </div>
+      <div>
+        <div style="color:#7a7a7a;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:12px">ongoing codebase health</div>
+        <div style="color:#d4d4d4;margin-bottom:6px">track risk over time.</div>
+        <div style="font-family:'Hanken Grotesk',sans-serif;font-size:15px;line-height:1.55;color:#8f8f8f">run the same analysis over time to watch architectural, operational, and ownership risk on your own repositories.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- licensing + contact -->
+  <div style="border-top:1px solid rgba(255,255,255,0.12);padding:40px 0 8px;margin-top:40px">
+    <div style="font-weight:700;font-size:18px;color:#f2f2f2;margin-bottom:20px">commercial shape</div>
+    <div style="display:flex;flex-direction:column;gap:0;font-size:14px">
+      <div class="r-spec" style="display:grid;grid-template-columns:190px 1fr;gap:18px;padding:13px 0;border-top:1px solid rgba(255,255,255,0.07)">
+        <span style="color:#666">paid evaluation</span><span style="color:#c4c4c4">from <span style="color:#f2f2f2">€1,400</span> for one assessment.</span>
+      </div>
+      <div class="r-spec" style="display:grid;grid-template-columns:190px 1fr;gap:18px;padding:13px 0;border-top:1px solid rgba(255,255,255,0.07)">
+        <span style="color:#666">annual licences</span><span style="color:#c4c4c4">for recurring assessments and ongoing codebase monitoring.</span>
+      </div>
+      <div class="r-spec" style="display:grid;grid-template-columns:190px 1fr;gap:18px;padding:13px 0;border-top:1px solid rgba(255,255,255,0.07)">
+        <span style="color:#666">analyzers</span><span style="color:#c4c4c4">standard analyzers included according to the technologies in use.</span>
+      </div>
+      <div class="r-spec" style="display:grid;grid-template-columns:190px 1fr;gap:18px;padding:13px 0;border-top:1px solid rgba(255,255,255,0.07);border-bottom:1px solid rgba(255,255,255,0.07)">
+        <span style="color:#666">additional work</span><span style="color:#c4c4c4">new analyzer development, target-specific setup, and analytical support are scoped separately.</span>
+      </div>
+    </div>
+    <div style="font-family:'Hanken Grotesk',sans-serif;font-size:14px;color:#7a7a7a;margin-top:20px">tell us what you are assessing and we will scope it with you.</div>
+    <div style="display:flex;gap:9px;flex-wrap:wrap;margin-top:14px">
+      <a href="https://cal.com/cyberwitchery" target="_blank" style="border:1px solid #e8e8e8;background:#e8e8e8;color:#0a0a0a;padding:11px 22px;font-size:13px;font-weight:700" class="hv8">talk to us about an assessment →</a>
+      <a href="mailto:contact@cyberwitchery.com?subject=ddt" style="border:1px solid rgba(255,255,255,0.3);color:#e4e4e4;padding:11px 22px;font-size:13px;font-weight:700" class="hv9">email us about ddt</a>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div style="border-top:1px solid rgba(255,255,255,0.12);margin-top:48px;padding:22px 0 60px;display:flex;gap:14px;color:#5a5a5a;font-size:13px;flex-wrap:wrap">
+    <span>© 2026</span><span>·</span>
+    <a href="index.html" style="color:#777" class="hv10">cyberwitchery</a><span>·</span>
+    <a href="imprint.html" style="text-decoration:underline;color:#777" class="hv11">imprint</a><span>·</span>
+    <a href="privacy.html" style="text-decoration:underline;color:#777" class="hv12">privacy</a>
+  </div>
+
+</div>
+</div>
+</body>
+</html>

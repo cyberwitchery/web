@@ -1,53 +1,96 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>privacy — cyber witchery lab</title>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>privacy · cyberwitchery</title>
+<meta name="description" content="how cyberwitchery handles data on this site: standard server logs, no analytics, no tracking, no advertising cookies.">
+<link rel="canonical" href="https://cyberwitchery.com/privacy.html">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Hanken+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#0a0a0a}
+  ::selection{background:#e8e8e8;color:#0a0a0a}
+  a{text-decoration:none;color:inherit}
+  @media (max-width:680px){
+    .r-wrap{padding:0 20px !important;}
+    .r-spec{grid-template-columns:1fr !important;gap:3px !important;}
+  }
+</style>
+<style>
+.hv0:hover{color:#fff !important}
+.hv1:hover{color:#fff !important}
+.hv2:hover{color:#fff !important}
+.hv3:hover{color:#fff !important}
+.hv4:hover{color:#fff !important}
+.hv5:hover{color:#fff !important}
+.hv6:hover{color:#fff !important}
+.hv7:hover{color:#fff !important}
+.hv8:hover{color:#fff !important}
+.hv9:hover{color:#fff !important}
+.hv10:hover{color:#fff !important}
+</style>
+</head>
+<body>
+<div style="background:#0a0a0a;color:#e4e4e4;font-family:'JetBrains Mono',monospace;min-height:100vh;-webkit-font-smoothing:antialiased;font-size:14px;line-height:1.65">
+<div class="r-wrap" style="max-width:760px;margin:0 auto;padding:0 36px">
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
+  <div style="display:flex;align-items:center;justify-content:space-between;gap:14px 20px;padding:26px 0;flex-wrap:wrap">
+    <a href="index.html" style="font-weight:700;color:#f2f2f2" class="hv0">cyberwitchery lab</a>
+    <div style="display:flex;gap:13px;color:#555;font-size:13px;flex-wrap:wrap">
+      <a href="alembic.html" style="color:#bbb" class="hv1">alembic</a><span>·</span>
+      <!-- parked: ddt --><!--<a href="ddt.html" style="color:#bbb" class="hv2">ddt</a><span>·</span>-->
+      <a href="index.html#work" style="color:#bbb" class="hv3">work with us</a><span>·</span>
+      <a href="/log" style="color:#bbb" class="hv4">log</a><span>·</span>
+      <a href="papers.html" style="color:#bbb" class="hv5">papers</a><span>·</span>
+      <a href="https://github.com/cyberwitchery" target="_blank" style="color:#bbb" class="hv6">github</a>
+    </div>
+  </div>
 
-  <body>
-    <main class="frame sub">
-      <section class="box">
-        <h1>privacy (datenschutz)</h1>
+  <div style="padding:60px 0 16px">
+    <h1 style="font-weight:700;font-size:30px;letter-spacing:-0.02em;margin:0;color:#f4f4f4">privacy</h1>
+    <p style="font-family:'Hanken Grotesk',sans-serif;font-size:15px;color:#7e7e7e;margin:14px 0 0;max-width:580px">what this site does with data, in plain language.</p>
+  </div>
 
-        <p class="label">controller</p>
-        <ul>
-          <li><span class="muted">veit heller</span>, <span class="muted">moltkestr. 5, 91054 erlangen, germany</span></li>
-          <li>contact: <span class="muted">contact@cyberwitchery.com</span></li>
-        </ul>
+  <div style="display:flex;flex-direction:column;gap:0;padding:24px 0 8px">
+    <div class="r-spec" style="display:grid;grid-template-columns:200px 1fr;gap:18px;padding:16px 0;border-top:1px solid rgba(255,255,255,0.08)">
+      <span style="color:#666">controller</span>
+      <span style="color:#c4c4c4;font-family:'Hanken Grotesk',sans-serif;font-size:15px">veit heller, see the <a href="imprint.html" style="color:#c4c4c4;text-decoration:underline" class="hv7">imprint</a> for full details. questions: <a href="mailto:contact@cyberwitchery.com" style="color:#c4c4c4;text-decoration:underline" class="hv8">contact@cyberwitchery.com</a>.</span>
+    </div>
+    <div class="r-spec" style="display:grid;grid-template-columns:200px 1fr;gap:18px;padding:16px 0;border-top:1px solid rgba(255,255,255,0.08)">
+      <span style="color:#666">what we collect</span>
+      <span style="color:#c4c4c4;font-family:'Hanken Grotesk',sans-serif;font-size:15px">the server keeps standard access logs, including your ip address, for security and troubleshooting. we run no analytics and set no cookies. if you email us, we keep that message.</span>
+    </div>
+    <div class="r-spec" style="display:grid;grid-template-columns:200px 1fr;gap:18px;padding:16px 0;border-top:1px solid rgba(255,255,255,0.08)">
+      <span style="color:#666">third parties</span>
+      <span style="color:#c4c4c4;font-family:'Hanken Grotesk',sans-serif;font-size:15px">the site is hosted by fastmail. fonts load from google fonts, so your ip reaches google when a page opens. booking a call opens cal.com, which sets its own terms. links out to github and email leave this site.</span>
+    </div>
+    <div class="r-spec" style="display:grid;grid-template-columns:200px 1fr;gap:18px;padding:16px 0;border-top:1px solid rgba(255,255,255,0.08)">
+      <span style="color:#666">legal basis</span>
+      <span style="color:#c4c4c4;font-family:'Hanken Grotesk',sans-serif;font-size:15px">art. 6(1)(f) gdpr, our legitimate interest in running a secure website, and art. 6(1)(b) for handling an inquiry you start.</span>
+    </div>
+    <div class="r-spec" style="display:grid;grid-template-columns:200px 1fr;gap:18px;padding:16px 0;border-top:1px solid rgba(255,255,255,0.08)">
+      <span style="color:#666">your rights</span>
+      <span style="color:#c4c4c4;font-family:'Hanken Grotesk',sans-serif;font-size:15px">access, correction, deletion, restriction, and portability of your data, and a complaint to a supervisory authority. write to the address above.</span>
+    </div>
+    <div class="r-spec" style="display:grid;grid-template-columns:200px 1fr;gap:18px;padding:16px 0;border-top:1px solid rgba(255,255,255,0.08);border-bottom:1px solid rgba(255,255,255,0.08)">
+      <span style="color:#666">updated</span>
+      <span style="color:#c4c4c4;font-family:'Hanken Grotesk',sans-serif;font-size:15px">21 august 2026</span>
+    </div>
+  </div>
 
-        <hr />
+  <div style="border-top:1px solid rgba(255,255,255,0.12);margin-top:44px;padding:22px 0 60px;display:flex;gap:14px;color:#5a5a5a;font-size:13px;flex-wrap:wrap">
+    <span>© 2026</span><span>·</span>
+    <a href="index.html" style="color:#777" class="hv9">cyberwitchery</a><span>·</span>
+    <a href="imprint.html" style="text-decoration:underline;color:#777" class="hv10">imprint</a>
+  </div>
 
-        <p class="label">hosting + logs</p>
-        <ul>
-          <li>our host processes server logs (ip address, timestamp, url, user-agent) for security and troubleshooting.</li>
-          <li>retention: <span class="muted">14 days</span></li>
-        </ul>
-
-        <hr />
-
-        <p class="label">analytics</p>
-        <ul>
-          <li>we use plausible analytics for aggregated traffic trends.</li>
-          <li>plausible is cookie-less and does not use persistent identifiers; data is aggregated.</li>
-          <li>provider: <a href="https://plausible.io">plausible analytics</a> (eu; infrastructure based in germany).</li>
-        </ul>
-
-        <hr />
-
-        <p class="label">your rights</p>
-        <ul>
-          <li>access, rectification, erasure, restriction, objection, portability.</li>
-          <li>complaint with your supervisory authority.</li>
-        </ul>
-
-        <hr />
-
-        <a href="./">back</a>
-      </section>
-    </main>
-  </body>
+</div>
+</div>
+</body>
 </html>

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cyberwitchery.com/sitemap.xml
+Sitemap: https://cyberwitchery.com/log/sitemap.xml
