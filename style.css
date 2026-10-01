@@ -142,6 +142,8 @@ summary::-webkit-details-marker{display:none}
 .netviz{flex:1 1 380px;max-width:560px;min-width:0;position:relative;aspect-ratio:600/320;font-family:'JetBrains Mono',monospace}
 .netviz svg{position:absolute;inset:0;width:100%;height:100%}
 .node{position:absolute;transform:translate(-50%,-50%);padding:5px 10px;border:1px solid rgba(255,255,255,.18);background:#0a0a0a;color:#cfcfcf;font-size:13px;white-space:nowrap}
+.node.l{transform:translate(0,-50%)}
+.node.r{transform:translate(-100%,-50%)}
 .hub{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:170px;height:84px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:radial-gradient(closest-side,#0a0a0a 52%,rgba(10,10,10,0))}
 .hub b{color:#f4f4f4;font-size:17px;letter-spacing:.04em}
 .hub span{color:#9c9c9c;font:13px 'Hanken Grotesk',sans-serif;margin-top:2px}
@@ -235,7 +237,7 @@ summary::-webkit-details-marker{display:none}
 .cta-box .btn:hover{color:#f4f4f4;background:none}
 
 .talks{display:flex;flex-direction:column}
-.rates-d{order:-1;background:none;border-width:1px 0}
+.rates-d{order:-1;align-self:stretch;background:none;border-width:1px 0}
 .rates-d summary{padding:0;min-height:52px}
 .rates-d summary>:last-child{color:#9c9c9c}
 .rates-d .rates{padding:0 0 12px}
