@@ -1,0 +1,5 @@
+Contact: mailto:contact@cyberwitchery.com
+Expires: 2027-10-01T00:00:00.000Z
+Policy: https://github.com/cyberwitchery/.github/blob/main/SECURITY.md
+Preferred-Languages: en, de
+Canonical: https://cyberwitchery.com/.well-known/security.txt
