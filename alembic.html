@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>alembic · network data between your systems · cyberwitchery</title>
 <meta name="description" content="alembic moves infrastructure data between netbox, nautobot, infrahub, and your fabric and ops tools, through a model you control. open source core.">
-<link rel="canonical" href="https://cyberwitchery.com/alembic.html">
+<link rel="canonical" href="https://cyberwitchery.com/alembic">
 <meta name="theme-color" content="#0a0a0a">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="cyberwitchery">
-<meta property="og:url" content="https://cyberwitchery.com/alembic.html">
+<meta property="og:url" content="https://cyberwitchery.com/alembic">
 <meta property="og:title" content="alembic · network data between your systems · cyberwitchery">
 <meta property="og:description" content="alembic moves infrastructure data between netbox, nautobot, infrahub, and your fabric and ops tools, through a model you control. open source core.">
 <meta property="og:image" content="https://cyberwitchery.com/og.png">
@@ -20,7 +20,7 @@
 <meta name="twitter:title" content="alembic · network data between your systems · cyberwitchery">
 <meta name="twitter:description" content="alembic moves infrastructure data between netbox, nautobot, infrahub, and your fabric and ops tools, through a model you control. open source core.">
 <meta name="twitter:image" content="https://cyberwitchery.com/og.png">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"alembic","url":"https://cyberwitchery.com/alembic.html","applicationCategory":"DeveloperApplication","description":"translates infrastructure data between systems through a shared model you control.","license":"https://www.apache.org/licenses/LICENSE-2.0","publisher":{"@type":"Organization","name":"cyberwitchery","url":"https://cyberwitchery.com/"},"sameAs":["https://github.com/cyberwitchery/alembic"],"offers":[{"@type":"Offer","name":"open source","price":"0","priceCurrency":"EUR"},{"@type":"Offer","name":"commercial connectors, annual licence","price":"6000","priceCurrency":"EUR","description":"from €6,000 per year"}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"alembic","url":"https://cyberwitchery.com/alembic","applicationCategory":"DeveloperApplication","description":"translates infrastructure data between systems through a shared model you control.","license":"https://www.apache.org/licenses/LICENSE-2.0","publisher":{"@type":"Organization","name":"cyberwitchery","url":"https://cyberwitchery.com/"},"sameAs":["https://github.com/cyberwitchery/alembic"],"offers":[{"@type":"Offer","name":"open source","price":"0","priceCurrency":"EUR"},{"@type":"Offer","name":"commercial connectors, annual licence","price":"6000","priceCurrency":"EUR","description":"from €6,000 per year"}]}]}</script>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,12 +31,13 @@
 <a class="skip" href="#main">skip to content</a>
 <header class="top">
 <div class="wrap bar">
-<a class="brand" href="index.html"><svg aria-hidden="true" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="square"><path d="M128 24 L160 56 L128 88 L96 56 Z"></path><path d="M128 168 L160 200 L128 232 L96 200 Z"></path><path d="M128 88 L128 168"></path><path d="M44 128 L212 128"></path></svg><span>cyberwitchery lab</span></a>
+<a class="brand" href="/"><svg aria-hidden="true" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="square"><path d="M128 24 L160 56 L128 88 L96 56 Z"></path><path d="M128 168 L160 200 L128 232 L96 200 Z"></path><path d="M128 88 L128 168"></path><path d="M44 128 L212 128"></path></svg><span>cyberwitchery lab</span></a>
 <button class="menu-btn" type="button" popovertarget="menu">menu</button>
 <nav id="menu" popover="auto" aria-label="main">
-<div class="grp p"><span class="label pl">products</span><a href="alembic.html" aria-current="page">alembic</a><a href="divinate.html">divinate</a><!-- parked: ddt --><!--<a href="ddt.html">ddt</a>--></div>
+<div class="grp p"><span class="label pl">products</span><a href="/alembic" aria-current="page">alembic</a><a href="/divinate">divinate</a><!-- parked: ddt --><!--<a href="/ddt">ddt</a>--></div>
 <span class="sep" aria-hidden="true"></span>
-<div class="grp"><span class="label svc">services</span><a href="index.html#consulting">consulting</a><a href="index.html#talks">talks</a><a href="index.html#writing">writing</a></div>
+<div class="grp"><span class="label svc">services</span><a href="/#consulting">consulting</a><a href="/#talks">talks</a><a href="/#writing">writing</a></div>
+<!-- parked: art --><!--<span class="sep" aria-hidden="true"></span><div class="grp"><a href="https://art.cyberwitchery.com/">art</a></div>-->
 <a class="btn" href="https://cal.com/cyberwitchery" target="_blank" rel="noopener">book a call</a>
 </nav>
 </div>
@@ -63,7 +64,7 @@
 
 <section class="s prob" aria-labelledby="h-problem">
 <div class="wrap">
-<h2 class="h2" id="h-problem">one network, described differently by every system</h2>
+<h2 class="h2" id="h-problem">the network is described differently by every system</h2>
 <div class="grid c2">
 <div><p class="label mb dx">the problem</p><p>a device is a record in netbox, a host in ansible, a target in prometheus, a name in dns. keeping them consistent usually means scripts written pair by pair, rewritten whenever a system changes.</p></div>
 <div class="sf"><p class="label mb dx">alembic’s role</p><p><strong>alembic owns the translation.</strong> you define one model of your infrastructure, and every system connects to it instead of to each other.</p></div>
@@ -118,9 +119,9 @@
 <div class="wrap">
 <h2 class="h2" id="h-how">how it works</h2>
 <ol class="grid c3 steps">
-<li><h3 class="step"><span class="dx">source data →</span><span class="mx">read</span></h3><p class="small">connectors read from your source systems.</p></li>
-<li><h3 class="step"><span class="dx">shared model →</span><span class="mx">map into your model</span></h3><p class="small"><span class="dx">each source is mapped in your model. </span>transformations are written down in one place and validated against the types and relationships of the model.</p></li>
-<li><h3 class="step"><span class="dx">planned changes</span><span class="mx">plan, review, apply</span></h3><p class="small">alembic compares the model with the destinations and produces a plan. you review it, and apply it explicitly.</p></li>
+<li><h3 class="step"><span class="dx">source data →</span><span class="mx">read</span></h3><p class="small mu">connectors read from your source systems.</p></li>
+<li><h3 class="step"><span class="dx">shared model →</span><span class="mx">map into your model</span></h3><p class="small mu"><span class="dx">each source is mapped in your model. </span>transformations are written down in one place and validated against the types and relationships of the model.</p></li>
+<li><h3 class="step"><span class="dx">planned changes</span><span class="mx">plan, review, apply</span></h3><p class="small mu">alembic compares the model with the destinations and produces a plan. you review it, and apply it explicitly.</p></li>
 </ol>
 </div>
 </section>
@@ -143,12 +144,12 @@
 <div class="duo">
 <div class="rule">
 <h3 class="h3">evaluate it yourself</h3>
-<p class="mu">the source, documentation, and examples are public. install a release and point it at your lab.</p>
+<p class="small mu">the source, documentation, and examples are public. install a release and point it at your lab.</p>
 <a class="btn o" href="https://github.com/cyberwitchery/alembic" target="_blank" rel="noopener">github.com/cyberwitchery/alembic</a>
 </div>
 <div class="rule">
 <h3 class="h3">plan a deployment</h3>
-<p class="mu">tell us what you run. we confirm connector availability and scope the integration.</p>
+<p class="small mu">tell us what you run. we confirm connector availability and scope the integration.</p>
 <div class="actions">
 <a class="btn" href="https://cal.com/cyberwitchery" target="_blank" rel="noopener">book a call</a>
 <a class="btn o" href="mailto:contact@cyberwitchery.com?subject=alembic">email us</a>
@@ -164,8 +165,8 @@
 <nav aria-label="footer">
 <a href="mailto:contact@cyberwitchery.com">contact@cyberwitchery.com</a>
 <a href="https://github.com/cyberwitchery" target="_blank" rel="noopener">github</a>
-<a href="imprint.html">imprint</a>
-<a href="privacy.html">privacy</a>
+<a href="/imprint">imprint</a>
+<a href="/privacy">privacy</a>
 </nav>
 </div>
 </footer>

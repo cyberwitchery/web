@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>divinate · evidence for security review · cyberwitchery</title>
 <meta name="description" content="divinate collects and preserves technical evidence for security review and compliance, with provenance and history. open source, in early development.">
-<link rel="canonical" href="https://cyberwitchery.com/divinate.html">
+<link rel="canonical" href="https://cyberwitchery.com/divinate">
 <meta name="theme-color" content="#0a0a0a">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="cyberwitchery">
-<meta property="og:url" content="https://cyberwitchery.com/divinate.html">
+<meta property="og:url" content="https://cyberwitchery.com/divinate">
 <meta property="og:title" content="divinate · evidence for security review · cyberwitchery">
 <meta property="og:description" content="divinate collects and preserves technical evidence for security review and compliance, with provenance and history. open source, in early development.">
 <meta property="og:image" content="https://cyberwitchery.com/og.png">
@@ -20,7 +20,7 @@
 <meta name="twitter:title" content="divinate · evidence for security review · cyberwitchery">
 <meta name="twitter:description" content="divinate collects and preserves technical evidence for security review and compliance, with provenance and history. open source, in early development.">
 <meta name="twitter:image" content="https://cyberwitchery.com/og.png">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareSourceCode","name":"divinate","url":"https://cyberwitchery.com/divinate.html","codeRepository":"https://github.com/cyberwitchery/divinate","description":"collects and preserves technical evidence for security review and compliance.","license":"https://www.apache.org/licenses/LICENSE-2.0","publisher":{"@type":"Organization","name":"cyberwitchery","url":"https://cyberwitchery.com/"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareSourceCode","name":"divinate","url":"https://cyberwitchery.com/divinate","codeRepository":"https://github.com/cyberwitchery/divinate","description":"collects and preserves technical evidence for security review and compliance.","license":"https://www.apache.org/licenses/LICENSE-2.0","publisher":{"@type":"Organization","name":"cyberwitchery","url":"https://cyberwitchery.com/"}}]}</script>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,12 +31,13 @@
 <a class="skip" href="#main">skip to content</a>
 <header class="top">
 <div class="wrap bar">
-<a class="brand" href="index.html"><svg aria-hidden="true" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="square"><path d="M128 24 L160 56 L128 88 L96 56 Z"></path><path d="M128 168 L160 200 L128 232 L96 200 Z"></path><path d="M128 88 L128 168"></path><path d="M44 128 L212 128"></path></svg><span>cyberwitchery lab</span></a>
+<a class="brand" href="/"><svg aria-hidden="true" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="square"><path d="M128 24 L160 56 L128 88 L96 56 Z"></path><path d="M128 168 L160 200 L128 232 L96 200 Z"></path><path d="M128 88 L128 168"></path><path d="M44 128 L212 128"></path></svg><span>cyberwitchery lab</span></a>
 <button class="menu-btn" type="button" popovertarget="menu">menu</button>
 <nav id="menu" popover="auto" aria-label="main">
-<div class="grp p"><span class="label pl">products</span><a href="alembic.html">alembic</a><a href="divinate.html" aria-current="page">divinate</a><!-- parked: ddt --><!--<a href="ddt.html">ddt</a>--></div>
+<div class="grp p"><span class="label pl">products</span><a href="/alembic">alembic</a><a href="/divinate" aria-current="page">divinate</a><!-- parked: ddt --><!--<a href="/ddt">ddt</a>--></div>
 <span class="sep" aria-hidden="true"></span>
-<div class="grp"><span class="label svc">services</span><a href="index.html#consulting">consulting</a><a href="index.html#talks">talks</a><a href="index.html#writing">writing</a></div>
+<div class="grp"><span class="label svc">services</span><a href="/#consulting">consulting</a><a href="/#talks">talks</a><a href="/#writing">writing</a></div>
+<!-- parked: art --><!--<span class="sep" aria-hidden="true"></span><div class="grp"><a href="https://art.cyberwitchery.com/">art</a></div>-->
 <a class="btn" href="https://cal.com/cyberwitchery" target="_blank" rel="noopener">book a call</a>
 </nav>
 </div>
@@ -86,10 +87,10 @@
 <h2 class="h2 tight" id="h-evidence">keep your evidence up to date</h2>
 <p class="lead">security reviews and compliance reports make claims about how a team controls its code and releases. divinate keeps the evidence behind <span class="dx">those claims, so a reviewer can point to it later.</span><span class="mx">them, for example:</span></p>
 <ul class="grid c4">
-<li class="small">whether a default branch requires review and passing checks<span class="dx"> before changes merge</span></li>
-<li class="small">which checks a repository runs, and which <span class="dx">of them </span>are required</li>
-<li class="small">what a release contains, from its <span class="dx">software bill of materials</span><span class="mx">sbom</span></li>
-<li class="small">what changed between one collection and the next</li>
+<li>whether a default branch requires review and passing checks<span class="dx"> before changes merge</span></li>
+<li>which checks a repository runs, and which <span class="dx">of them </span>are required</li>
+<li>what a release contains, from its <span class="dx">software bill of materials</span><span class="mx">sbom</span></li>
+<li>what changed between one collection and the next</li>
 </ul>
 </div>
 </section>
@@ -139,12 +140,12 @@
 <div class="duo">
 <div class="rule">
 <h3 class="h3">read the source</h3>
-<p class="mu">documentation covers setup, concepts, and the trust boundaries of the evidence store.</p>
+<p class="small mu">documentation covers setup, concepts, and the trust boundaries of the evidence store.</p>
 <a class="btn o" href="https://github.com/cyberwitchery/divinate" target="_blank" rel="noopener">github.com/cyberwitchery/divinate</a>
 </div>
 <div class="rule">
 <h3 class="h3">talk to us about an application</h3>
-<p class="mu">if you run security reviews or compliance and want to know whether divinate fits, we’d like to hear what you examine.</p>
+<p class="small mu">if you run security reviews or compliance and want to know whether divinate fits, we’d like to hear what you examine.</p>
 <a class="btn" href="mailto:contact@cyberwitchery.com?subject=divinate">contact@cyberwitchery.com</a>
 </div>
 </div>
@@ -157,8 +158,8 @@
 <nav aria-label="footer">
 <a href="mailto:contact@cyberwitchery.com">contact@cyberwitchery.com</a>
 <a href="https://github.com/cyberwitchery" target="_blank" rel="noopener">github</a>
-<a href="imprint.html">imprint</a>
-<a href="privacy.html">privacy</a>
+<a href="/imprint">imprint</a>
+<a href="/privacy">privacy</a>
 </nav>
 </div>
 </footer>

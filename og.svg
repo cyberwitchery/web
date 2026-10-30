@@ -13,8 +13,8 @@
 
   <!-- wordmark + tagline -->
   <text x="90" y="250" font-family="JetBrains Mono" font-weight="700" font-size="82" letter-spacing="-2" fill="#f4f4f4">cyberwitchery</text>
-  <text x="92" y="320" font-family="Hanken Grotesk" font-weight="500" font-size="30" fill="#9c9c9c">network automation, security</text>
-  <text x="92" y="362" font-family="Hanken Grotesk" font-weight="500" font-size="30" fill="#9c9c9c">&amp; developer tooling</text>
+  <text x="92" y="320" font-family="Hanken Grotesk" font-weight="500" font-size="30" fill="#9c9c9c">we build hard software,</text>
+  <text x="92" y="362" font-family="Hanken Grotesk" font-weight="500" font-size="30" fill="#9c9c9c">and help teams build theirs.</text>
 
   <!-- bottom rule + meta -->
   <line x1="92" y1="470" x2="560" y2="470" stroke="rgba(255,255,255,0.14)" stroke-width="1.5"/>

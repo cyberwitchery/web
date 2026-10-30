@@ -5,11 +5,11 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://cyberwitchery.com/alembic.html</loc>
+    <loc>https://cyberwitchery.com/alembic</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://cyberwitchery.com/divinate.html</loc>
+    <loc>https://cyberwitchery.com/divinate</loc>
     <priority>0.8</priority>
   </url>
   <url>
@@ -17,11 +17,11 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://cyberwitchery.com/imprint.html</loc>
+    <loc>https://cyberwitchery.com/imprint</loc>
     <priority>0.2</priority>
   </url>
   <url>
-    <loc>https://cyberwitchery.com/privacy.html</loc>
+    <loc>https://cyberwitchery.com/privacy</loc>
     <priority>0.2</priority>
   </url>
 </urlset>
