@@ -27,6 +27,51 @@ getting data into the model is a map: a written-down transformation from a sourc
 
 import, map and plan only read. alembic compares the model with each destination and produces a deterministic plan of creates, updates and deletes. apply is the only step that writes, and it writes in dependency order. alembic manages only the fields your model declares and leaves everything else in a backend alone. when a plan binds a declared object to a record that already exists, the plan says so. an apply that stops halfway resumes from its journal.
 
+## a small example
+
+an inventory declares objects in your model. this excerpt, from the example inventory in the repository, declares a site and a device in it; the device points at the site, role and device type by uid:
+
+```yaml
+objects:
+  - uid: "a4d6a0c3-4e73-4a76-b216-4d38f8c55f3d"
+    type: dcim.site
+    key:
+      slug: "fra1"
+    attrs:
+      name: "FRA1"
+      slug: "fra1"
+      status: "active"
+
+  - uid: "7b8f7a92-8fd0-4667-9a4b-9f3b5c9a4b1a"
+    type: dcim.device
+    key:
+      name: "leaf01"
+    attrs:
+      name: "leaf01"
+      site: "a4d6a0c3-4e73-4a76-b216-4d38f8c55f3d"
+      role: "b1c2d3e4-5f60-4a7b-8c9d-0e1f2a3b4c5d"
+      device_type: "c2d3e4f5-6071-4b8c-9d0e-1f2a3b4c5d6e"
+      status: "active"
+```
+
+validate it, plan against a backend, and apply the reviewed plan:
+
+```bash
+alembic validate -f examples/inventory.yaml
+
+NETBOX_URL=https://netbox.example.com NETBOX_TOKEN=... \
+  alembic plan --backend netbox -f examples/inventory.yaml -o plan.json
+
+NETBOX_URL=https://netbox.example.com NETBOX_TOKEN=... \
+  alembic apply --backend netbox -p plan.json
+```
+
+the same inventory plans against nautobot or infrahub by changing `--backend`.
+
+## working with it from an agent
+
+alembic ships an agent skill inside the binary. it states the operating contract the command line does not: what each command touches, the identity rules, which flags are assertions, and worked workflows. `alembic skill show alembic` prints it, and `alembic skill install alembic` writes it to `.agents/skills/alembic/SKILL.md`, stamped with the version that wrote it. source: https://github.com/cyberwitchery/alembic/blob/main/crates/alembic-cli/skills/alembic/SKILL.md
+
 ## the open core
 
 the open core holds the model, the engine, and connectors for the main inventory systems: netbox, nautobot, infrahub, any rest api, and peeringdb (read only).

@@ -35,6 +35,26 @@ divinate only answers "every" or "none" after it has shown that it saw the whole
 
 configuration and history are separate questions. "review is configured" is answered from today's settings, "review happened" from the history of changes, and one never stands in for the other. a question like "were the reviews adequate?" is split into the parts records can settle and the part they cannot, and that part stays with a person.
 
+## an answer, as you get it
+
+for a repository with no review history collected yet, the exported answer to the review question reads:
+
+```markdown
+## every change integrated into main during 2026-09-12T01:17:42+02:00 .. 2026-10-31T13:36:32.601944665Z received at least one approving review before integration
+
+result: **insufficient evidence**
+
+- gap: no collection attempt matched this population and scope; uncovered intervals: 2026-09-12T01:17:42+02:00 to 2026-10-31T13:36:32.601944665Z
+  - missing coverage: pull request reviews, repository mutations
+- limitation: an approval recorded before integration does not establish that every provider-specific stale-review or vote-reset condition remained satisfied
+```
+
+the question, the result, what is missing, and what even a positive answer would not establish appear together. every answer carries an id that `divinate provenance` traces back to the exact retained responses it was derived from.
+
+## working with it from an agent
+
+divinate has an agent skill that lets an agent set up divinate, collect evidence, and answer compliance questions without overstating what the evidence shows. copy the `skills/divinate` directory from the repository into your agent's skills directory, for example `~/.claude/skills/divinate` for claude code. source: https://github.com/cyberwitchery/divinate/blob/main/skills/divinate/SKILL.md
+
 ## history
 
 no collection is overwritten. each one is kept, so a review can compare the state of a repository over time and see what changed between one collection and the next. when evidence is missing or inaccessible, that is recorded too.
