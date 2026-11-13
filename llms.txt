@@ -1,0 +1,30 @@
+# cyberwitchery
+
+> independent software lab. we maintain alembic and divinate, and consult on network automation, security, technical due diligence, and developer tooling.
+
+## products
+
+- [alembic](https://cyberwitchery.com/alembic.md): alembic moves infrastructure data between netbox, nautobot, infrahub, and your fabric and ops tools, through a model you control. open source core.
+- [divinate](https://cyberwitchery.com/divinate.md): divinate collects and preserves technical evidence for security review and compliance, with provenance and history. open source, in early development.
+
+## company
+
+- [cyberwitchery](https://cyberwitchery.com/index.md): we are an independent consulting and product studio. we maintain alembic and divinate, and work across network automation, security, developer tooling, and systems.
+- [book a call](https://cal.com/cyberwitchery)
+- [contact@cyberwitchery.com](mailto:contact@cyberwitchery.com)
+
+## open source
+
+- [netform](https://github.com/cyberwitchery/netform): diff and review network configs before they ship.
+- [contextual-encoder](https://github.com/cyberwitchery/contextual-encoder): output encoding per context, for xss defense.
+- [unsafe-budget](https://github.com/cyberwitchery/unsafe-budget): limits unsafe code in rust and go projects.
+- [all repositories on github](https://github.com/cyberwitchery)
+
+## writing
+
+- [the log](https://cyberwitchery.com/log/): notes on what we build, how it works, and what we learn doing it.
+
+## optional
+
+- [papers](https://cyberwitchery.com/papers.html): lab notes from cyberwitchery: short write-ups of problems we find interesting, published as a paper series. each note is a pdf.
+- [imprint](https://cyberwitchery.com/imprint): imprint and legal details for cyberwitchery, as required under § 5 ddg.
